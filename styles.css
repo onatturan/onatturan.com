@@ -1,0 +1,299 @@
+<<<<<<< HEAD
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  nav {
+    margin-bottom: 20px;
+    background-color: #2c3e50;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #34495e;
+  }
+  
+  main p, main ul {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  footer {
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: 30px;
+  }
+  
+=======
+/* Genel Sayfa Stili */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Navigasyon Menüsü */
+nav {
+  background-color: #2c3e50;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #1abc9c;
+}
+
+/* Hero (Ana Sayfa) Bölümü */
+.hero {
+  background: url('Assest/background.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  margin-top: 60px;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero .highlight {
+  color: #1abc9c;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  color: white;
+  background: #1abc9c;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background: #16a085;
+}
+
+/* İçerik Konteyneri */
+.container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Başlık Stili */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+/* Metin Stili */
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Academic Work & Capstone Project - Resim Galerisi */
+.image-gallery,
+.capstone-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.image-gallery .image-box,
+.capstone-gallery .image-box {
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img,
+.capstone-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-gallery .image-box a,
+.capstone-gallery .image-box a {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-gallery .image-box:hover,
+.capstone-gallery .image-box:hover {
+  transform: scale(1.05);
+}
+
+.image-gallery .image-box:hover a,
+.capstone-gallery .image-box:hover a {
+  opacity: 1;
+}
+
+/* PDF Dosya Linkleri */
+.document-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.document-list li {
+  margin: 10px 0;
+}
+
+.document-list a {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #2980b9;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: #ecf0f1;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.document-list a:hover {
+  background: #2980b9;
+  color: white;
+}
+
+/* Footer Stili */
+footer {
+  font-size: 1rem;
+  color: gray;
+  margin-top: 40px;
+  padding: 15px 0;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  background-color: #2c3e50;
+  color: white;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .image-gallery,
+  .capstone-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .image-gallery .image-box,
+  .capstone-gallery .image-box {
+    width: 150px;
+    height: 150px;
+  }
+}
+>>>>>>> Initial commit
